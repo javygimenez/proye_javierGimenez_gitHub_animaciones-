@@ -1,0 +1,857 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+  
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(./Open_Sans/static/OpenSans/OpenSans-Medium.ttf);
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ebfcfb;
+}
+
+/*.borde{
+    border: solid 1px #000;
+}*/
+
+/* HEADER */
+
+header {
+    background-image: url("./img/imagen_header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 96%; 
+}
+
+
+.imgLogo{
+    border: #09ab82 solid 5px;
+    width: 300px;
+    height: 300px;
+}
+.titulo {       
+    text-align: center;
+    color: #03422f;
+    width: 100%;
+    height: 100px;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.ulFlex{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    background-color: #81c4fc;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100px;
+    border: #03422f solid 5px;    
+}
+.menu { 
+    color: #03422f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2{
+    background-color: #09ab82;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 10px;
+    font-style: italic;
+}
+
+/* SECTION */
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+h3{
+    color: #000;
+    padding: 10px 10px;
+    font-style: normal;
+    text-align: center;
+}
+
+.fondoArticle{
+    margin: 5px;
+    background-color: #dbefff;
+    width: 100%;
+    height: 25vh;    
+    padding: 10px;
+    /*border-width: 5px;
+    border-style: solid;
+    border-color: blueviolet;*/
+    border: #81c4fc solid 5px;            
+}
+
+.parrafoIndex{    
+    color: #000 ;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.imgIndex{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+}
+
+/* SECTION CONSULTAS */
+
+
+
+/* ASIDE */
+
+aside{
+    background-color: black;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: center;
+   
+}
+
+.parAside{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+
+/* FOOTER */
+footer{
+    background-color: #27282D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul li{    
+    display: inline-block;
+}
+
+.iconoFooter{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/*NOMBRES DE AREAS INDEX*/
+header{
+    grid-area: cabeza;
+    padding: 10px;
+}
+.seccion1{
+    grid-area: cuerpo1;
+    padding: 10px;
+}
+.seccion2{
+    grid-area: cuerpo2;
+    padding: 10px;
+}
+.seccion3{
+    grid-area: cuerpo3;
+    padding: 10px;
+}
+.seccion4{
+    grid-area: cuerpo4;
+    padding: 10px;
+}
+aside{
+    grid-area: brazo;
+    padding: 10px;
+}
+footer{
+    grid-area: pie;
+    padding: 10px;
+}
+/*GRID AREAS INDEX*/
+.gridAreas{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "cuerpo1 cuerpo2 brazo"
+    "cuerpo3 cuerpo4 brazo"
+    "pie pie pie" 
+    ;
+    grid-template-columns:  40% 40% 20%;
+    grid-template-rows: 550px 1fr 1fr 200px;                            
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;               
+}
+
+
+/* NOMBRES DE AREAS NOSOTROS */
+.headerNos{
+    grid-area: cabezaNos;
+    padding: 10px;
+}
+
+.seccionUnoNos{
+    grid-area: cuerpo1Nos;
+    padding: 10px;
+}
+
+.seccionDosNos{
+    grid-area: cuerpo2Nos;
+    padding: 10px;
+}
+
+.asideNos{
+    grid-area: brazoNos;
+    padding: 10px;
+}
+
+.footNos{
+    grid-area: pieNos;
+    padding: 10px;
+}
+
+/* GRID AREAS NOSOTROS */
+.gridAreaNos{
+    display: grid;
+    grid-template-areas: 
+    "cabezaNos cabezaNos"
+    "cuerpo1Nos brazoNos"
+    "cuerpo2Nos brazoNos"
+    "pieNos pieNos"
+    ;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 550px 1fr 1fr 1fr 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;      
+}
+
+
+
+
+/* NOMBRES DE AREAS PRODUCTOS */
+
+.headerProdu{
+    grid-area: cabezaProdu;
+    padding: 10px;
+}
+
+.seccionProdu{
+    grid-area: cuerpoProdu;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    margin-top: 10px;
+}
+
+
+.field1{
+    grid-area: campo1;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.field2{
+    grid-area: campo2;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.field3{
+    grid-area: campo3;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.field4{
+    grid-area: campo4;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.asideProdu{
+    grid-area: brazoProdu;
+    padding: 10px;
+    
+}
+
+.footerProdu{
+    grid-area: pieProdu;
+    padding: 10px;
+}
+
+
+/* GRID AREAS PRODUCTOS */
+.gridAreasProdu{
+    display: grid;
+    grid-template-areas:
+    "cabezaProdu cabezaProdu cabezaProdu"
+    "cuerpoProdu cuerpoProdu brazoProdu"
+    "campo1 campo2 brazoProdu"
+    "campo3 campo4 brazoProdu"
+    "pieProdu pieProdu pieProdu" 
+    ;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 550px 1fr 1fr 1fr 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;    
+}
+
+
+/* NOMBRE DE AREAS GALERIA */
+.headerGal{
+    grid-area: cabezaGal;
+    padding: 10px;
+    
+}
+
+.sectGalUno{
+    grid-area: cuerpo1Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.sectGalDos{
+    grid-area: cuerpo2Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.sectGalTres{
+    grid-area: cuerpo3Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.sectGalCuatro{
+    grid-area: cuerpo4Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.sectGalCinco{
+    grid-area: cuerpo5Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.sectGalSeis{
+    grid-area: cuerpo6Gal;
+    padding: 10px;
+    background-color: #dbefff;
+    margin: 10px;    
+    border: solid 5px #09ab82;
+    text-align: center;
+}
+
+.asideGal{
+    grid-area: brazoGal;
+    padding: 10px;
+}
+
+.footGal{
+    grid-area: pieGal;
+}
+
+/* GRID AREAS GALERIA */
+.gridAreaGal{
+    display: grid;
+    grid-template-areas:
+    "cabezaGal cabezaGal cabezaGal"
+    "cuerpo1Gal cuerpo2Gal brazoGal"
+    "cuerpo3Gal cuerpo4Gal brazoGal"
+    "cuerpo5Gal cuerpo6Gal brazoGal"
+    "pieGal pieGal pieGal" 
+    ;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 550px 1fr 1fr 1fr 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;  
+}
+
+
+/* NOMBRE DE AREAS CONSULTAS */
+
+.headerConsu{
+    grid-area: cabezaConsu;
+    padding: 10px;
+}
+
+.sectUnoConsu{
+    grid-area: cuerpoConsu1;
+    padding: 10px;
+    display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.sectDosConsu{
+    grid-area: cuerpoConsu2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.asideConsu{
+    grid-area: brazoConsu;
+    padding: 10px;
+}
+
+.footConsu{
+    grid-area: pieConsu;
+    padding: 10px;
+}
+
+/* GRID AREA CONSULTAS */
+
+.gridAreaConsu{
+    display: grid;
+    grid-template-areas:
+    "cabezaConsu cabezaConsu"
+    "cuerpoConsu1 brazoConsu"
+    "cuerpoConsu2 brazoConsu"
+    "pieConsu pieConsu" 
+    ;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 550px 1fr 1fr 200px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;  
+}
+
+.fieldConsultas{
+    width: 25%;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;    
+    border: solid 3px #09ab82;
+    text-align: center;
+}
+
+form{
+    align-items: center;
+}
+
+
+/* MEDIA QUERIES */
+
+/* INDEX MQ */
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreas{
+        display: grid;
+        grid-template-areas:
+        "cabeza cabeza"
+        "cuerpo1 cuerpo2"
+        "cuerpo3 cuerpo4"
+        "brazo brazo"
+        "pie pie" 
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px 1fr 1fr 200px 200px;                            
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;               
+    }
+    
+    .fondoArticle{
+        width: 100%;
+        height: 30vh;               
+    }
+    
+    .parrafoIndex{    
+        font-size: 0.90rem;
+    }
+
+    /*nav{
+        width: 100%;        
+    }*/
+
+    nav ul li{
+        padding: 3px 5px;
+        margin: 5px;
+        width: 90px;
+        border: #03422f solid 4px;    
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    
+    
+}
+
+
+/* INDEX MQ */
+/* SMARTPHONE */
+@media (max-width: 479px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreas{
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "cuerpo1"
+        "cuerpo2"
+        "cuerpo3"
+        "cuerpo4"
+        "brazo"
+        "pie" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 1fr 1fr 1fr 1fr 200px 200px;                            
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;               
+    }    
+    
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .titulo {      
+        text-align: start;        
+        font-size: 3rem;
+    }
+
+    .ulFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 1px;
+        border: #03422f solid 4px;  
+    }
+   
+
+    .imgLogo{
+        border: #09ab82 solid 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .parrafoIndex{        
+        font-size: 0.75rem;
+    }
+}
+
+
+/* NOSOTROS MQ */
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    .gridAreaNos{
+        display: grid;
+        grid-template-areas: 
+        "cabezaNos cabezaNos"
+        "cuerpo1Nos cuerpo1Nos"
+        "cuerpo2Nos cuerpo2Nos"
+        "brazoNos brazoNos"
+        "pieNos pieNos"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px 1fr 1fr 1fr 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;      
+    }    
+}
+
+/* NOSOTROS MQ */
+/* SMARTPHONE */
+@media (max-width: 479px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreaNos{
+        display: grid;
+        grid-template-areas:
+        "cabezaNos"
+        "cuerpo1Nos"
+        "cuerpo2Nos"
+        "brazoNos"
+        "pieNos" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 1fr 1fr 1fr 200px;                            
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;               
+    }    
+    
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .titulo {      
+        text-align: start;        
+        font-size: 3rem;
+    }
+
+    .ulFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 1px;
+        border: #03422f solid 4px;  
+    }
+   
+
+    .imgLogo{
+        border: #09ab82 solid 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .parrafoIndex{        
+        font-size: 0.75rem;
+    }
+}
+
+
+/* PRODUCTOS MQ */
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreasProdu{
+        display: grid;
+        grid-template-areas:
+        "cabezaProdu cabezaProdu"
+        "cuerpoProdu cuerpoProdu"
+        "campo1 campo2"
+        "campo3 campo4"
+        "brazoProdu brazoProdu"
+        "pieProdu pieProdu" 
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px 1fr 1fr 1fr 200px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;    
+    }
+}
+
+/* PRODUCTOS MQ */
+/* SMARTPHONE */
+@media (max-width: 479px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+
+    .gridAreasProdu{
+        display: grid;
+        grid-template-areas:
+        "cabezaProdu"
+        "cuerpoProdu"
+        "campo1"
+        "campo2"
+        "campo3"
+        "campo4"
+        "brazoProdu"
+        "pieProdu" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 1fr 1fr 1fr 1fr 1fr 200px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;    
+    }  
+}
+
+/* GALERIA MQ */
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreaGal{
+        display: grid;
+        grid-template-areas:
+        "cabezaGal cabezaGal"
+        "cuerpo1Gal cuerpo2Gal"
+        "cuerpo3Gal cuerpo4Gal"
+        "cuerpo5Gal cuerpo6Gal"
+        "brazoGal brazoGal"
+        "pieGal pieGal" 
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px 1fr 1fr 1fr 1fr 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;  
+    }
+    .fotosGal{
+        width: 75%;
+        height: 100%;
+    }
+    .videoGal{
+        width: 75%;
+        height: 100%;
+    }
+}
+
+/* GALERIA MQ */
+/* SMARTPHONE */
+@media (max-width: 479px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+
+    .gridAreaGal{
+        display: grid;
+        grid-template-areas:
+        "cabezaGal"
+        "cuerpo1Gal"
+        "cuerpo2Gal"
+        "cuerpo3Gal"
+        "cuerpo4Gal"
+        "cuerpo5Gal"
+        "cuerpo6Gal"
+        "brazoGal"
+        "pieGal" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 1fr 1fr 1fr 1fr 1fr 1fr 200px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;    
+    }
+    
+}
+
+
+/* CONSULTAS MQ*/
+/* TABLETS */
+@media (min-width: 480px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+    
+    .gridAreaConsu{
+        display: grid;
+        grid-template-areas:
+        "cabezaConsu cabezaConsu"
+        "cuerpoConsu1 cuerpoConsu1"
+        "cuerpoConsu2 cuerpoConsu2"
+        "brazoConsu brazoConsu"
+        "pieConsu pieConsu" 
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px 1fr 1fr 1fr 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;  
+    }
+    .fieldConsultas{
+        padding: 25px;
+        margin: 20px;    
+        border: solid 3px #09ab82;        
+    }
+}
+
+/* CONSULTAS MQ */
+/* SMARTPHONE */
+@media (max-width: 479px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #ebfcfb;
+    }
+
+    .gridAreaConsu{
+        display: grid;
+        grid-template-areas:
+        "cabezaConsu"
+        "cuerpoConsu1"
+        "cuerpoConsu2"
+        "brazoConsu"
+        "pieConsu" 
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 1fr 1fr 200px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;    
+    }
+    
+}

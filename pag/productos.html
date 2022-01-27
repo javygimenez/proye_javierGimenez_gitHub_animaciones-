@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+
+<body class="gridAreasProdu">
+
+    <header class="headerProdu borde">
+        <a href="../index.html"><img class="imgLogo" src="../img/logo_el_envase.jpg" alt="este es el logo"></a>
+        <h1 class="titulo">EL ENVASE</h1>
+        <nav>
+            <ul class="ulFlex">
+                <li><a class="menu" href="../index.html">Inicio</a></li>
+                <li><a class="menu" href="../pag/nosotros.html">Nosotros</a></li>
+                <li><a class="menu" href="../pag/productos.html">Productos</a></li>
+                <li><a class="menu" href="../pag/galeria.html">Galería</a></li>
+                <li><a class="menu" href="../pag/consultas.html">Consultas</a></li>
+            </ul>
+        </nav>
+        <h2>Productos de limpieza para el hogar</h2>
+
+    </header>
+
+    <section class="seccionProdu borde">
+        <table border="3" cellpadding=15 cellspacing=5>
+            <tr>
+                <th>Producto</th>
+                <th>Color</th>
+                <th>Presentación por litros</th>
+            </tr>
+            <tr>
+                <td>Jabón líquido para ropa</td>
+                <td>Verde-Rojo-Azul</td>
+                <td>1L-5L-20L</td>
+            </tr>
+            <tr>
+                <td>Suavizante para ropa</td>
+                <td>Celeste-Rosado-Amarillo</td>
+                <td>1L-5L-20L</td>
+            </tr>
+            <tr>
+                <td>Desodorante para pisos</td>
+                <td>Cherry-Lavanda-Pino</td>
+                <td>1L-5L-20L</td>
+            </tr>
+            <tr>
+                <td>Lavandina</td>
+                <td>Común-Ropa blanca-Ropa color</td>
+                <td>1L-5L-20L</td>
+            </tr>
+            <h2>Elija su producto</h2>
+        </table>
+    </section>
+
+    <fieldset class="field1">
+        <h3>Jabón líquido para ropa</h3>
+        <img class="fotos" src="../img/jl_01.jpg" alt="imagen de jabón líquido" width="200" height="300">
+        <br>
+        <label for="verde">Verde</label>
+        <input type="radio" value="verde" id="verde" name="color">
+
+        <label for="rojo">Rojo</label>
+        <input type="radio" value="rojo" id="rojo" name="color">
+
+        <label for="azul">Azul</label>
+        <input type="radio" value="azul" id="azul" name="color">
+        <br><br>
+
+        <select name="presentacion" id="">
+            <option value="">Elija presentacion</option>
+            <option value="1l">1 litro</option>
+            <option value="5l">5 litros</option>
+            <option value="20l">20 litros</option>
+        </select>
+        <br><br>
+
+        <label for="check">Acepto las condiciones</label>
+        <input type="checkbox" id="check" value="1">
+        <br><br>
+
+        <input type="submit" value="Comprar">
+    </fieldset>
+    <br><br>
+
+    </fieldset>
+
+    <fieldset class="field2">
+        <h3>Suavizante para ropa</h3>
+        <img class="fotos" src="../img/jl_02.jpg" alt="imagen de suavizante para ropa" width="200" height="300">
+        <br>
+        <label for="celeste">Celeste</label>
+        <input type="radio" value="celeste" id="celeste" name="color">
+
+        <label for="rosado">Rosado</label>
+        <input type="radio" value="rosado" id="rosado" name="color">
+
+        <label for="amarillo">Amarillo</label>
+        <input type="radio" value="amarillo" id="amarillo" name="color">
+        <br><br>
+
+        <select name="presentacion" id="">
+            <option value="">Elija presentacion</option>
+            <option value="1l">1 litro</option>
+            <option value="5l">5 litros</option>
+            <option value="20l">20 litros</option>
+        </select>
+        <br><br>
+
+        <label for="check">Acepto las condiciones</label>
+        <input type="checkbox" id="check" value="1">
+        <br><br>
+
+        <input type="submit" value="Comprar">
+
+    </fieldset>
+
+    <fieldset class="field3">
+        <h3>Desodorante para pisos</h3>
+        <img class="fotos" src="../img/jl_04.jpg" alt="imagen desodorante de pisos" width="200" height="300">
+        <br>
+        <label for="cherry">Cherry</label>
+        <input type="radio" value="cherry" id="cherry" name="fragancia">
+
+        <label for="lavanda">Lavanda</label>
+        <input type="radio" value="lavanda" id="lavanda" name="fragancia">
+
+        <label for="pino">Pino</label>
+        <input type="radio" value="pino" id="pino" name="fragancia">
+        <br><br>
+
+        <select name="presentacion" id="">
+            <option value="">Elija presentacion</option>
+            <option value="1l">1 litro</option>
+            <option value="5l">5 litros</option>
+            <option value="20l">20 litros</option>
+        </select>
+        <br><br>
+
+        <label for="check">Acepto las condiciones</label>
+        <input type="checkbox" id="check" value="1">
+        <br><br>
+
+        <input type="submit" value="Comprar">
+
+
+    </fieldset>
+
+    <fieldset class="field4">
+        <h3>Lavandina</h3>
+        <img class="fotos" src="../img/jl_04.jpg" alt="imagen de lavandina" width="200" height="300">
+        <br>
+        <label for="comun">Común</label>
+        <input type="radio" value="comun" id="comun" name="lavandina">
+
+        <label for="ropaBlanca">Ropa blanca</label>
+        <input type="radio" value="ropaBlanca" id="ropaBlanca" name="lavandina">
+
+        <label for="ropaColor">Ropa color</label>
+        <input type="radio" value="ropaColor" id="ropaColor" name="lavandina">
+        <br><br>
+
+        <select name="presentacion" id="">
+            <option value="">Elija presentacion</option>
+            <option value="1l">1 litro</option>
+            <option value="5l">5 litros</option>
+            <option value="20l">20 litros</option>
+        </select>
+        <br><br>
+
+        <label for="check">Acepto las condiciones</label>
+        <input type="checkbox" id="check" value="1">
+        <br><br>
+
+        <input type="submit" value="Comprar">
+
+    </fieldset>
+
+    <aside class="asideProdu">
+        <p class="parAside">MANTENIMIENTO PARA PICINAS</p>
+        <p class="parAside">Cuidamos de tu piscina con los mejores productos. Contactanos:</p>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="iconoFooter" src="../img/whatsapp.png"
+                alt="logo de whatsapp"></a>
+
+    </aside>
+
+
+    <footer class="footerProdu">
+        <p>Dirección:</p>
+        <p>Av. Almafuerte y Soldado Bordón, Paraná, Entre Rios, Argentina.</p>
+
+        <p>Contactos:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/elenvase.almafuerte/?ref=page_internal" target="_blank"><img
+                        class="iconoFooter" src="../img/facebook.png" alt="logo de facebook"></a>
+            </li>
+            <li><a href="https://www.instagram.com/elenvase/?hl=es-la" target="_blank"><img class="iconoFooter"
+                        src="../img/instagram.png" alt="logo de instagram"></a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><img class="iconoFooter" src="../img/whatsapp.png"
+                        alt="logo de whatsapp"></a></li>
+        </ul>
+        <p>&copy; 2021 All Rights Reserved &reg; JG Soluciones & Co.</p>
+
+    </footer>
+</body>
+
+</html>
